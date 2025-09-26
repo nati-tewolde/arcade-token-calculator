@@ -100,9 +100,13 @@ public class ArcadeApp {
                 return;
         }
         
-        System.out.println("You have $" + amount + ", which gives you " + tokens + " tokens.");
+/*      System.out.println("You have $" + amount + ", which gives you " + tokens + " tokens.");
         System.out.println("You selected " + gameName + ". Each game costs " + tokenCost + " tokens.");
-        System.out.println("You can play " + replays + " times and will have " + leftover + " token(s) left over.");
+        System.out.println("You can play " + replays + " times and will have " + leftover + " token(s) left over.");*/
+
+        System.out.printf("You have $%.1f, which gives you %d tokens.%n", amount, tokens);
+        System.out.printf("You selected %s. Each game costs %d tokens.%n", gameName, tokenCost);
+        System.out.printf("You can play %d times and will have %d token(s) left over.%n", replays, leftover);
 
 
     }
